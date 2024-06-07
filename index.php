@@ -34,7 +34,7 @@ include("DBconnection/connect.php");
       <div class="navbar-collapse collapse" id="collapse">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="productslist.php">Products&nbsp;</a></li>
+          <li class="nav-item"><a class="nav-link" href="productslist.php">roducts&nbsp;</a></li>
           <li class="nav-item"><a class="nav-link" href="services.php">Services&nbsp;</a></li>
           <li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="contactUs.html">Contact Us</a></li>
