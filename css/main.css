@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --bs-font-sans-serif: 'Inter', sans-serif;
+}
+
+.back-dark {
+  background-color: black;
+}
+
+.navbar {
+  transition: all 0.5s;
+}
+
+/* .fixed-top{
+  margin-bottom: 100px;
+} */
+
+.navbar-scrolled {
+  background: black;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.548);
+  font-weight: 400;
+}
+
+.nav-icons {
+  margin-right: 10px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: red;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0.25rem;
+  color: white;
+}
+
+/* Style the links inside the navigation bar */
+
+/* .topnav a:hover {
+  border-bottom: 3px solid orange;
+} */
+
+.topnav a.active {
+  border-bottom: 3px solid red;
+}
+
+.nav-center {
+  text-align: center;
+}
+
+
+/* transition duration to control the speed of fade effect */
+.carousel-item {
+  transition: transform 1.6s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 2.6s;
+}
+
+.btn-color1 {
+  background-color: #FF6B2E;
+  border-color: #FF6B2E;
+  font-weight: 500;
+  border-radius: 50px;
+}
+
+.btn-color2 {
+  background-color: white;
+  border-color: #FF6B2E;
+  color: #FF6B2E;
+  font-weight: 500;
+  border-radius: 50px;
+}
+
+.btn-primary-outline {
+  background-color: transparent;
+  /* border-color: white; */
+}
+.btn-primary-outline:hover{
+  background-color: #5d5d5d;
+}
+
+.btn-profile{
+  border-radius: 50%;
+}
+
+.nav-btns{
+  gap: 10px;
+}
+.headingsDark {
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  font-weight: 600;
+}
+
+.profile-picture-container {
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer; /* Add cursor style to indicate it's clickable */
+}
+
+.profile-picture {
+  border-radius: 50%;
+  align-items: center; 
+}
+
+.headingsLight {
+  color: black;
+  font-size: xx-large;
+  text-align: center;
+  font-weight: 600;
+}
+
+.textDark {
+  color: white;
+  text-align: justify;
+  font-weight: 400;
+
+}
+
+.textLight {
+  color: black;
+  text-align: justify;
+  font-weight: 400;
+  font-size: auto;
+
+}
+
+.hero-section {
+  align-items: flex-start;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+}
+
+fieldset {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.floating {
+  margin: auto;
+  animation-name: floating;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.bgimg-1 {
+  background-image: url("../images/bg1.jpg");
+  min-height: 500px;
+}
+
+.bgimg-2 {
+  background-image: url("../images/bg2.jpg");
+  min-height: 500px;
+}
+
+.bgimg-3 {
+  background-color: black;
+  background-image: url("../images/bgmain.png");
+  min-height: 500px;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.back-dark h5 {
+  font-weight: 600;
+  color: #FF6B2E;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  color: white;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.logos {
+  display: flex;
+}
+
+.logo:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.footerIcons i {
+  margin-right: 10px;
+}
+
+.footerItem {
+  text-decoration: none;
+  color: rgb(228, 222, 222);
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.footerText {
+  color: rgb(228, 222, 222);
+  font-weight: 400;
+}
+
+.textMuted {
+  color: #9c9b9b;
+}
+
+.footerItem:hover {
+  color: #ed9873;
+}
+
+.form-label {
+  color: white;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext {
+  padding: 0rem 0.75rem;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-control-plaintext,
+.form-floating>.form-select {
+  height: calc(2.5rem + 2px);
+  line-height: 1;
+}
+
+.form-floating>label {
+  padding: 0.5rem 0.75rem;
+}
+
+.form-control:focus {
+  border-color: #f0ca76;
+  box-shadow: 0 0 0 0.2rem #f1b83cb5;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, 15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .navbar {
+    background: #000 !important;
+    color: #fff !important;
+    text-align: center;
+    top: 0;
+  }
+
+  body {
+    padding-top: 50px;
+  }
+
+  .img-remove {
+    display: none;
+  }
+
+  .mobileView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .textDark .textLight {
+    font-size: 3vw;
+  }
+}

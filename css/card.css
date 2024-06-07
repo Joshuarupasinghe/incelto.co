@@ -1,0 +1,29 @@
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, 0.454);
+    border-radius: 25px;
+  
+  }
+  
+  .card:hover {
+    transition:
+      filter 200ms linear,
+      transform 200ms linear;
+    box-shadow: 0 60px 80px rgba(0, 0, 0, 0.60), 0 45px 26px rgba(0, 0, 0, 0.14);
+    transform: scale(1.05) translateZ(0);
+  }
+  
+  .card {
+    border-color: #f1b83c00;
+    border-radius: 25px;
+  }
+  
+  .card-img {
+    border-radius: 25px;
+  }
+  
+  .card h5 {
+    border-bottom: 2px solid #dee2e6;
+    border-color: #FF6B2E;
+    text-align: center;
+  
+  }

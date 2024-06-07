@@ -1,0 +1,77 @@
+
+body{
+    background-image: url(../images/home10.jpg);
+   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+svg{
+  color:black;
+  align-items: center;
+}
+
+
+nav{
+    background-color: black;
+
+}
+.wrapper{
+  
+  color: #000000;
+  backdrop-filter: blur(10px);
+}
+ 
+h4{
+  color: black;
+  text-align:center ;
+}
+.container{
+ 
+ 
+    height: 490px;
+ 
+    justify-content: center;
+    align-items: center;
+ 
+   font-weight: normal;
+   bottom: 1000px;
+  
+ 
+}
+.wrapper .form-box{
+  width: 100%;
+  padding: 40px;
+
+}
+.error {
+
+  background: #d85741;
+  color: white;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 20px auto;
+
+}
+ .btn{
+ 
+  height: 45px;
+  background: #fa4b00;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #e7e6e5;
+  font-weight: 500;
+}
+.email{
+  height: 45px;
+  
+  font-size: 1em;
+  
+  font-weight: 500;
+}
+  
