@@ -1,0 +1,182 @@
+.cos-div {
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .profile-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .img-prof {
+    max-width: 100%;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 55px;
+    margin-bottom: 40px;
+  }
+
+
+  p {
+    font-size: 16px;
+  }
+
+  b {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  h3::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 6px;
+    width: 100%;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+  }
+
+  .project-images {
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px 0px;
+    max-width: 100%;
+    margin: 42px auto;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .project-images img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .contact-info {
+    font-size: 11px;
+  }
+
+  .working-hours {
+    margin-top: 10px;
+  }
+
+  .navbar {
+    background-color: black;
+  }
+
+  .rating {
+    display: inline-block;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+  }
+
+  .rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .rating label:last-child {
+    position: static;
+  }
+
+  .rating label:nth-child(1) {
+    z-index: 5;
+  }
+
+  .rating label:nth-child(2) {
+    z-index: 4;
+  }
+
+  .rating label:nth-child(3) {
+    z-index: 3;
+  }
+
+  .rating label:nth-child(4) {
+    z-index: 2;
+  }
+
+  .rating label:nth-child(5) {
+    z-index: 1;
+  }
+
+  .rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  .rating label .icon {
+    float: left;
+    color: transparent;
+  }
+
+  .rating label:last-child .icon {
+    color: #000;
+  }
+
+  .rating:not(:hover) label input:checked~.icon,
+  .rating:hover label:hover input~.icon {
+    color: #f1b434;
+  }
+
+  .rating label input:focus:not(:checked)~.icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #09f;
+  }
+
+  @media only screen and (min-width: 767px) {
+    .profile-container {
+      text-align: left;
+      width: 55%;
+      padding-top: 70px;
+    }
+
+    .img-prof {
+      max-width: 100%;
+      width: 190px;
+      height: 190px;
+      border-radius: 50%;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    b {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    .bdleft {
+      border-left: 1px solid lightgray;
+      padding-left: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 767px) and (max-width: 1366px) {
+    .profile-container {
+      text-align: left;
+      width: 80%;
+      padding-top: 70px;
+    }
+  }

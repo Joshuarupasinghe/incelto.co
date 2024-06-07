@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.container {
+	min-height: 100vh;
+	background: #08071d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url("../images/bgg.jpg") no-repeat center center/cover;
+	background-size: cover;
+}
+
+.container form {
+	width: 670px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	flex-wrap: wrap;
+}
+
+.container form h1 {
+	color: #fff;
+	font-weight: 500;
+	margin-top: 20px;
+	width: 500px;
+	text-align: center;
+}
+
+.container form input {
+	width: 290px;
+	height: 40px;
+	padding-left: 10px;
+	outline: none;
+	border: none;
+	font-size: 15px;
+	margin-bottom: 10px;
+	background: none;
+	border-bottom: 2px solid #f1b73c;
+}
+
+.container form input::placeholder {
+	color: #fff;
+}
+
+.container form #lastname,
+.container form #mobile {
+	margin-left: 20px;
+}
+
+.container form h4 {
+	color: #fff;
+	font-weight: 300;
+	width: 600px;
+	margin-top: 10px;
+    font-size: 15px;;
+}
+/* 
+.container form textarea {
+    background: none;
+    border:none;
+    border-bottom: 2px  solid #f1b73c;
+    color:#fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-width: 80px;
+    
+} */
+
+.container form textarea {
+	background: none;
+	border: none;
+	border-bottom: 2px solid #f1b73c;
+	color: #fff;
+	font-weight: 200;
+	font-size: 15px;
+	padding: 10px;
+	outline: none;
+	width: 100%;
+	min-height: 80px;
+	max-width: 90%;
+	margin-bottom: 10px;
+}
+
+textarea::-webkit-scrollbar {
+	width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+	background-color: rgba(194, 194, 194, 0.713);
+}
+
+.container form #button {
+	border: none;
+	background: #ff6b2e;
+	border-radius: 5px;
+	margin-top: 20px;
+	font-weight: 600;
+	font-size: 20px;
+	color: #333;
+	width: 100px;
+	padding: 0;
+	margin-right: 500px;
+	margin-bottom: 20px;
+	transition: 0.3s;
+}
+
+.container form #button:hover {
+	opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+	.container form {
+		max-width: 100%;
+		padding: 20px;
+	}
+
+	.container form #button {
+		margin-right: 0;
+	}
+	.container form h1 {
+		margin: 20px 0px;
+		width: 500px;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	.container form #lastname,
+	.container form #mobile {
+		margin-left: 0px;
+	}
+	.container form textarea {
+		width: 100%;
+		margin: auto 12px;
+	}
+	.container form h4 {
+		margin-left: 9vw;
+		width: 90%;
+	}
+}

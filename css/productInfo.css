@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+section {
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-container {
+    width: 100%;
+    text-align: center;
+}
+
+.img-product {
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+p {
+    font-size: 16px;
+}
+
+b {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h3::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 6px;
+    width: 100%;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+}
+
+.project-images {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-images img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 11px;
+}
+
+.working-hours {
+    margin-top: 10px;
+}
+
+.navbar {
+    background-color: black;
+}
+
+@media only screen and (min-width: 768px) {
+    .profile-container {
+        text-align: left;
+        width: 55vw;
+        padding-top: 70px;
+    }
+
+    .img-prof {
+        max-width: 100%;
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        margin-top: 55px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    b {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+}
